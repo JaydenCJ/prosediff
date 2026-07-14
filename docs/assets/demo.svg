@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="520" viewBox="0 0 940 520" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+  <!-- Terminal transcript of a real run of
+       `prosediff diff examples/rules-old.md examples/rules-new.md`.
+       Text content is copied verbatim from an actual execution. -->
+  <rect width="940" height="520" rx="10" fill="#0d1117"/>
+  <rect width="940" height="34" rx="10" fill="#161b22"/>
+  <rect y="20" width="940" height="14" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="470" y="22" fill="#8b949e" text-anchor="middle" font-size="12">prosediff — moves, renames, and rewrites, not delete-plus-add noise</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> prosediff diff rules-old.md rules-new.md</text>
+    <text x="24" y="88" fill="#8b949e">prosediff: rules-old.md -&gt; rules-new.md | 7 sections: 1 added, 1 removed,</text>
+    <text x="24" y="108" fill="#8b949e">1 rewritten, 1 edited, 1 renamed, 1 moved (1 unchanged)</text>
+    <text x="24" y="140" fill="#56d4dd">&gt; moved     ## Deploy checklist  (#5 -&gt; #2)</text>
+    <text x="24" y="164" fill="#e3b341">~ edited    ## Build commands  (96% similar)</text>
+    <text x="24" y="188">    Run `make build` to compile and `make <tspan fill="#f85149">{-test`-}</tspan><tspan fill="#7ee787">{+check`+}</tspan> before every commit.</text>
+    <text x="24" y="212">    Never push with a red test suite.</text>
+    <text x="24" y="236" fill="#56d4dd">^ renamed   ## Testing -&gt; ## QA rules  (reordered)</text>
+    <text x="24" y="260" fill="#d2a8ff">! rewritten ## Code style -&gt; ## Style guide  (87% similar)</text>
+    <text x="24" y="284">    Four-space indentation, no tabs. Public functions need <tspan fill="#f85149">{-docstrings.-}</tspan><tspan fill="#7ee787">{+docstrings+}</tspan></text>
+    <text x="24" y="308">    <tspan fill="#7ee787">{+and type hints. +}</tspan>Keep modules under 400 lines; split by <tspan fill="#f85149">{-concern,&#160;not&#160;by&#160;layer.-}</tspan><tspan fill="#7ee787">{+concern.+}</tspan></text>
+    <text x="24" y="332" fill="#7ee787">+ added     ## Security</text>
+    <text x="24" y="356">    | Never commit secrets. Credentials come from the environment, and</text>
+    <text x="24" y="380">    | example configs use `127.0.0.1` or `example.test` hosts only.</text>
+    <text x="24" y="404" fill="#f85149">- removed   ## Legacy notes</text>
+    <text x="24" y="428">    | The old importer was removed in v2. Do not resurrect it; the</text>
+    <text x="24" y="452">    | replacement lives in `importer2/`.</text>
+    <text x="24" y="484"><tspan fill="#8b949e">exit code 1 — differences found (0 = identical, 2 = error)</tspan></text>
+  </g>
+</svg>
