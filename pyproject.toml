@@ -9,7 +9,7 @@ description = "Section-aware diff for Markdown rule and prompt files: detects mo
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "JaydenCJ" }]
+authors = [{ name = "JaydenCJ", email = "aisingioro.kiyon@gmail.com" }]
 keywords = ["diff", "markdown", "prompt", "claude-md", "code-review", "move-detection", "cli"]
 classifiers = [
     "Development Status :: 3 - Alpha",
